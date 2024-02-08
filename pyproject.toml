@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "discord-kim-modbot"
+version = "0.0.1"
+
+[tool.ruff]
+line-length = 120
+ignore = ["E501"]
+
+[tool.black]
+line-length = 120

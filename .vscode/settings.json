@@ -1,0 +1,12 @@
+{
+    "python.analysis.extraPaths": [
+        "./src/discord-kim-modbot"
+    ],
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit"
+        },
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-python.black-formatter",
+    },
+}

@@ -31,8 +31,8 @@ class GuardiaoCog(CommonCog):
         channel = self.bot.get_channel(BALCAO_CHANNEL)
 
         if isinstance(channel, discord.TextChannel):
-            if message.attachments[0].content_type.startswith("video"):
-                await channel.send(content=f"Vídeo reportado: \n {message.attachments[0].proxy_url}")
+            # if message.attachments[0].content_type.startswith("video"):
+            #     await channel.send(content=f"Vídeo reportado: \n {message.attachments[0].proxy_url}")
             await channel.send(embed=embed, view=url_view)
             return
 

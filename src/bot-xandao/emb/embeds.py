@@ -92,9 +92,7 @@ def report_embed(interaction: discord.Interaction, message: discord.Message):
     if message.content:
         embed.description = message.content
     if message.attachments:
-        attach = message.attachments[0]
-        if attach.content_type.startswith("image"):
-            embed.set_image(url=message.attachments[0].url)
+        embed.set_image(url=message.attachments[0].url)
 
         
     embed.set_author(
